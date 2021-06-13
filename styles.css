@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 125%;
+}
+
+body {
+  align-items: center;
+  background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 10px;
+  color: orangered;
+  text-align: center;
+}
+
+p {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.calculadora {
+  border-radius: 12px;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  max-width: 15em;
+  overflow: hidden;
+}
+
+.calculadora__display {
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.714285714em;
+  padding: 0.5em 0.75em;
+  text-align: right;
+}
+
+.calculadora__botones {
+  background-color: #999;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculadora__botones > button {
+  /* border: none; */
+  border-radius: 5px;
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.calculadora__botones > button:hover {
+  background-color: white;
+}
+
+.calculadora__botones > button:focus {
+  background-color: darkgray;
+}
+
+.tecla--operador {
+  border-radius: 5px;
+  border-collapse: collapse;
+  background-color: orange;
+}
+
+.tecla--igual {
+  border-radius: 5px;
+  border-collapse: collapse;
+  /* background-image: linear-gradient(to bottom, #fe886a, #ff7033); */
+  grid-column: -2;
+  grid-row: 2 / span 4;
+  background-color: royalblue;
+}
+
+.tecla--borrar {
+  background-color: red;
+}
